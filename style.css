@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #home {
+    background-color: #f2f2f2;
+  }
+  
+  #about {
+    background-color:grey;
+  }
+  
+  #Owner {
+    
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f2f2f2;
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+    
+    a:hover {
+      color: red;
+      opacity: 0.2;
+      filter: blur(5px);
+      transform: scale(2);
+      opacity: 1;
+      filter: blur(0);
+      text-decoration: none;
+      color: #fff;
+      
+
+  
+    }
+
+
+    ul li a:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, #ed0979, #ff6600);
+      transition: 0.5s;
+      transform-origin: right;
+      transform: scaleX(0);
+      z-index: -1;
+    }
+    
+    ul li a:hover:before {
+      transition: transform 0.5s;
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+
+    #directoryBtn {
+      width: 30px;
+      height: 30px;
+      background-image: url("command.png");
+      background-size: cover;
+      background-color:#252c32;
+      border: 0;
+      }

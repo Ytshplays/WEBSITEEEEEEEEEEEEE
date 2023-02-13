@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <a href="#">Dropdown</a>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="login.html">Login</a>
+        <a href="planet-dial.html">Planet Dial</a>
+
+
+      </div>
+    </div>
+    
+    <script>
+      const dropdown = document.querySelector('.dropdown');
+      const dropdownContent = document.querySelector('.dropdown-content');
+      
+      dropdown.addEventListener('click', function() {
+        dropdownContent.classList.toggle('show');
+      });
+    </script>
+  </body>
+</html>
